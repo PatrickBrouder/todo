@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h1 Create todo
+  form(name="todoItem", method="post", action='/admin/newItem')
+        input(type="text", name="item")
+        input(type="submit")

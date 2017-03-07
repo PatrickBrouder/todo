@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h1 To do list
+  for todo in todoList
+    p=todo.details
+  a(href='/admin/create') Create new item
